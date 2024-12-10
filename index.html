@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equal Height Images</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('/img/stone.jpg');
+            background-repeat: repeat;
+            background-size: 300px 300px;
+            display: flex; /* Make body a flex container */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-position: center;
+        }
+        img {
+            height: 120px; /* Set the desired equal height */
+            width: auto;   /* Adjust width based on aspect ratio */
+            transition: transform 0.3s ease, margin 0.3s ease; /* Smooth transition for scale and margin */
+        }
+        .image-container {
+            display: flex; /* Ensure images are in a row */
+            justify-content: center; /* Center the first set of images */
+            align-items: center; /* Vertically center the images */
+        }
+        .stretch {
+            flex-grow: 1; /* Allow the Hand Stretch image to expand */
+        }
+        .villager {
+            margin-left: auto; /* Push the Villager image to the right */
+        }
+        .button {
+            flex-shrink: 0; /* Prevent shrinking of button images */
+        }
+        .button:hover {
+            transform: scale(1.2); /* Enlarge the image when hovered */
+            margin: 0 10px; /* Add margin to make space for expansion */
+        }
+        
+    </style>
+</head>
+<body>
+    <div style="display: flex; width: 100%; justify-content: flex-start; align-items: center;">
+        <!-- Villager and hand images stay in place -->
+        <img class="villager" src="img/villager2.webp" alt="Hand Stretch">
+        <img class="stretch" src="img/handstretch.webp" alt="Hand Stretch">
+        <img src="img/hand2.webp" alt="Hand Stretch">
+        
+        <!-- Create a container for the first two images to center them -->
+        <div class="image-container">
+            <a href="sub/clown/clown.html">
+                <img class="button" src="img/bickering.webp" alt="Bickering">
+            </a>
+
+            <a href="sub/clown/clown.html">
+                <img class="button" src="img/Fruits.webp" alt="Bickering">
+            </a>
+        </div>
+
+        <!-- The Hand image comes directly after the previous images -->
+        <img src="img/hand.webp" alt="Hand">
+        
+        <!-- The Hand Stretch image will take available space between Hand and Villager -->
+        <img class="stretch" src="img/handstretch.webp" alt="Hand Stretch">
+        
+        <!-- The Villager image stays at the right of the screen -->
+        <img class="villager" src="img/villager.webp" alt="Villager">
+    </div>
+</body>
+</html>

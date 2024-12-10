@@ -1,0 +1,51 @@
+{
+  "sprites": [
+    {
+      "fileName": "tempimage2kftjv.jpg",
+      "width": 807,
+      "height": 807,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "fileName": "tempimage2oziyb.jpg",
+      "width": 807,
+      "height": 807,
+      "x": 807,
+      "y": 0
+    },
+    {
+      "fileName": "tempimagepjr5cw.jpg",
+      "width": 807,
+      "height": 807,
+      "x": 1614,
+      "y": 0
+    },
+    {
+      "fileName": "tempimagepxpm9c.jpg",
+      "width": 807,
+      "height": 807,
+      "x": 2421,
+      "y": 0
+    },
+    {
+      "fileName": "tempimagessn6yh.jpg",
+      "width": 807,
+      "height": 807,
+      "x": 3228,
+      "y": 0
+    },
+    {
+      "fileName": "tempimageui6ixo.jpg",
+      "width": 807,
+      "height": 807,
+      "x": 4035,
+      "y": 0
+    }
+  ],
+  "packMode": "horizontal",
+  "padding": 0,
+  "backgroundColor": "rgba(0, 0, 0, 0)",
+  "spriteSheetWidth": 4842,
+  "spriteSheetHeight": 807
+}

@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/img/bricktile.webp');
+    background-repeat: repeat;
+    background-size: 300px 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-position: center;
+}
+
+canvas {
+    outline: none;
+}
+
+.speech-text {
+    position: absolute;
+    bottom: calc(50% + 180px); /* Adjusted position above the clown */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: white;
+    text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+    width: 500px;
+}
+
