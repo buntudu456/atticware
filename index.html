@@ -11,11 +11,21 @@
             background-image: url('/img/stone.jpg');
             background-repeat: repeat;
             background-size: 300px 300px;
-            display: flex; /* Make body a flex container */
+            display: flex;
+            flex-direction: column; /* Stack content vertically */
             justify-content: center;
             align-items: center;
             height: 100vh;
             background-position: center;
+        }
+        .logo-container {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px; /* Add spacing between logo and other content */
+        }
+        .logo-container img {
+            height: 100px; /* Adjust the logo height */
+            width: auto;   /* Maintain aspect ratio */
         }
         img {
             height: 120px; /* Set the desired equal height */
@@ -40,10 +50,12 @@
             transform: scale(1.2); /* Enlarge the image when hovered */
             margin: 0 10px; /* Add margin to make space for expansion */
         }
-        
     </style>
 </head>
 <body>
+    <div class="logo-container">
+        <img src="img/atticware.webp" alt="Atticware Logo">
+    </div>
     <div style="display: flex; width: 100%; justify-content: flex-start; align-items: center;">
         <!-- Villager and hand images stay in place -->
         <img class="villager" src="img/villager2.webp" alt="Hand Stretch">
